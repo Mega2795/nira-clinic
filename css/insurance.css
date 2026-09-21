@@ -1,0 +1,654 @@
+/* ================================
+   BODY
+================================ */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f7f9f8;
+    font-family: Arial, sans-serif;
+    color: #26332f;
+    overflow-x: hidden;
+}
+
+
+/* ================================
+   COMMON SECTION CARD
+================================ */
+
+.insurance-partners,
+.why-insurance,
+.insurance-process,
+.insurance-cta {
+    width: 88%;
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 60px 50px;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   SECTION HEADING
+================================ */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #e88942;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    margin: 0 0 15px;
+    font-size: 38px;
+    color: #26332f;
+}
+
+.section-heading p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+    color: #69736f;
+    font-size: 16px;
+}
+
+
+/* ================================
+   INSURANCE PARTNER CARDS
+================================ */
+
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.partner-card {
+    background: #f8faf9;
+    border: 1px solid #e7ece9;
+    border-radius: 22px;
+    padding: 35px 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
+}
+
+.partner-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f3a15f;
+    color: white;
+    border-radius: 50%;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.partner-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.partner-card p {
+    margin: 0;
+    color: #737d79;
+}
+
+
+/* ================================
+   BENEFIT CARDS
+================================ */
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.benefit-card {
+    background: #f8faf9;
+    border: 1px solid #e7ece9;
+    border-radius: 22px;
+    padding: 35px;
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f3a15f;
+    color: white;
+
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    margin: 0 0 12px;
+    font-size: 21px;
+}
+
+.benefit-card p {
+    margin: 0;
+    color: #69736f;
+    line-height: 1.7;
+}
+
+
+/* ================================
+   PROCESS CARDS
+================================ */
+
+.process-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.process-line {
+    display: none;
+}
+
+.process-step {
+    position: relative;
+
+    background: #f8faf9;
+    border: 1px solid #e7ece9;
+
+    border-radius: 22px;
+    padding: 35px 25px;
+
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.step-number {
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f3a15f;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.process-step h3 {
+    margin: 0 0 12px;
+    font-size: 19px;
+}
+
+.process-step p {
+    margin: 0;
+    color: #69736f;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   CTA CARD
+================================ */
+
+.insurance-cta {
+    text-align: center;
+    padding: 70px 50px;
+    background: #eef6f2;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.cta-content h2 {
+    font-size: 38px;
+    margin: 10px 0 20px;
+}
+
+.cta-content p {
+    color: #69736f;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px 28px;
+
+    background: #e88942;
+    color: white;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(232, 137, 66, 0.3);
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 900px) {
+
+    .insurance-partners,
+    .why-insurance,
+    .insurance-process,
+    .insurance-cta {
+        width: 92%;
+        padding: 45px 25px;
+    }
+
+    .partner-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .insurance-partners,
+    .why-insurance,
+    .insurance-process,
+    .insurance-cta {
+        width: 94%;
+        padding: 40px 18px;
+        border-radius: 22px;
+    }
+
+    .section-heading h2,
+    .cta-content h2 {
+        font-size: 30px;
+    }
+
+    .partner-grid,
+    .benefits-grid,
+    .process-container {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-card,
+    .benefit-card,
+    .process-step {
+        padding: 30px 20px;
+    }
+}
+
+
+
+
+
+
+
+/* =========================
+   GET A QUOTE BUTTON
+========================= */
+
+.quote-btn {
+    display: inline-block;
+    padding: 14px 30px;
+
+    background: #e87524;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.quote-btn:hover {
+    background: #d66012;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   POPUP BACKGROUND
+========================= */
+
+.quote-modal {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    z-index: 9999;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+
+/* Show popup */
+
+.quote-modal.show {
+    display: flex;
+}
+
+
+/* =========================
+   POPUP BOX
+========================= */
+
+.quote-popup {
+
+    position: relative;
+
+    width: 100%;
+    max-width: 650px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 35px 40px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+
+    animation: quotePopup 0.3s ease;
+}
+
+
+/* Popup animation */
+
+@keyframes quotePopup {
+
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-quote {
+
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    background: #f3f3f3;
+
+    border-radius: 50%;
+
+    font-size: 28px;
+
+    color: #555;
+
+    cursor: pointer;
+
+    line-height: 30px;
+}
+
+.close-quote:hover {
+    background: #e87524;
+    color: white;
+}
+
+
+/* =========================
+   POPUP HEADER
+========================= */
+
+.quote-popup-header {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.quote-popup-header span {
+
+    color: #e87524;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.quote-popup-header h2 {
+
+    margin: 8px 0;
+
+    font-size: 30px;
+
+    color: #263238;
+}
+
+.quote-popup-header p {
+
+    margin: 0;
+
+    color: #777;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.quote-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color: #e87524;
+
+    box-shadow: 0 0 0 2px rgba(232, 117, 36, 0.1);
+}
+
+.form-group textarea {
+
+    resize: vertical;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit-quote-btn {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #e87524;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.submit-quote-btn:hover {
+
+    background: #d66012;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .quote-popup {
+
+        padding: 30px 22px;
+
+        max-height: 92vh;
+    }
+
+    .quote-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .quote-popup-header h2 {
+
+        font-size: 25px;
+    }
+
+}

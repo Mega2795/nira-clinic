@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Patients — Healthcare App</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html">Home</a>
+  <a href="html/patients.html">Patients</a>
+  <a href="html/appointments.html" class="active">Appointments</a>
+</nav>
+
+<h1>Patients</h1>
+
+<section>
+  <h2>Add Patient</h2>
+  <form id="patientForm">
+    <input type="text" id="firstName" placeholder="First name" required>
+    <input type="text" id="lastName" placeholder="Last name" required>
+    <input type="date" id="dateOfBirth" required>
+    <select id="gender" required>
+      <option value="">Select gender</option>
+      <option value="MALE">Male</option>
+      <option value="FEMALE">Female</option>
+      <option value="OTHER">Other</option>
+      <option value="UNDISCLOSED">Prefer not to say</option>
+    </select>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="phoneNumber" placeholder="Phone number">
+    <input type="text" id="address" placeholder="Address">
+    <input type="text" id="bloodType" placeholder="Blood type (e.g. O+)">
+    <textarea id="allergiesNotes" placeholder="Allergy notes"></textarea>
+    <button type="submit">Add Patient</button>
+  </form>
+  <div id="patientMsg"></div>
+</section>
+
+<section>
+  <h2>All Patients</h2>
+  <input type="text" id="searchName" placeholder="Search by name...">
+  <button id="searchBtn">Search</button>
+  <button id="refreshPatients" class="secondary">Show All</button>
+  <table id="patientsTable">
+    <thead>
+      <tr><th>ID</th><th>Name</th><th>DOB</th><th>Email</th><th>Phone</th><th></th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+
+<script src="js/api.js"></script>
+<script src="js/patients.js"></script>
+
+</body>
+</html>

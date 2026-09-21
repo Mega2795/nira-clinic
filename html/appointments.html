@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Appointments — Healthcare App</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html">Home</a>
+  <a href="../html/patients.html">Patients</a>
+  <a href="..html/appointments.html" class="active">Appointments</a>
+</nav>
+
+<h1>Appointments</h1>
+
+<section>
+  <h2>Book Appointment</h2>
+  <form id="appointmentForm">
+    <input type="number" id="patientId" placeholder="Patient ID" required>
+    <input type="text" id="doctorName" placeholder="Doctor name" required>
+    <input type="text" id="department" placeholder="Department">
+    <input type="datetime-local" id="appointmentTime" required>
+    <textarea id="reason" placeholder="Reason for visit"></textarea>
+    <button type="submit">Book Appointment</button>
+  </form>
+  <div id="appointmentMsg"></div>
+</section>
+
+<section>
+  <h2>All Appointments</h2>
+  <input type="number" id="filterPatientId" placeholder="Filter by patient ID">
+  <button id="filterBtn">Filter</button>
+  <button id="refreshAppointments" class="secondary">Show All</button>
+  <table id="appointmentsTable">
+    <thead>
+      <tr><th>ID</th><th>Patient ID</th><th>Doctor</th><th>When</th><th>Status</th><th></th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+
+<script src="js/api.js"></script>
+<script src="js/appointments.js"></script>
+
+</body>
+</html>
